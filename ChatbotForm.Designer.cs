@@ -39,7 +39,7 @@
             this.textBoxChat.Location = new System.Drawing.Point(10, 346);
             this.textBoxChat.Name = "textBoxChat";
             this.textBoxChat.Size = new System.Drawing.Size(778, 20);
-            this.textBoxChat.TabIndex = 0;
+            this.textBoxChat.TabIndex = 1;
             this.textBoxChat.Text = "Type your response here";
             // 
             // labelTitle
@@ -56,8 +56,9 @@
             // 
             this.richTextBoxChat.Location = new System.Drawing.Point(10, 48);
             this.richTextBoxChat.Name = "richTextBoxChat";
+            this.richTextBoxChat.ReadOnly = true;
             this.richTextBoxChat.Size = new System.Drawing.Size(778, 268);
-            this.richTextBoxChat.TabIndex = 2;
+            this.richTextBoxChat.TabIndex = 0;
             this.richTextBoxChat.Text = "Welcome to the Football Chatbot!\nBot: Ask me anything about football, type \'help\'" +
     " for assistance, or \'exit\' to quit.";
             // 
@@ -66,7 +67,7 @@
             this.buttonSend.Location = new System.Drawing.Point(713, 395);
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(75, 23);
-            this.buttonSend.TabIndex = 3;
+            this.buttonSend.TabIndex = 2;
             this.buttonSend.Text = "Send";
             this.buttonSend.UseVisualStyleBackColor = true;
             this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);

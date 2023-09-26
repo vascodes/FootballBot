@@ -24,6 +24,8 @@ namespace FootballBot
             this.richTextBoxChat.Text += $"You: {userInput}\n";
 
             this.richTextBoxChat.Text += chatbot.GetResponse(userInput) + "\n";
+
+            this.textBoxChat.Clear();
         }
     }
 }

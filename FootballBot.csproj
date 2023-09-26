@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UserProfile.cs" />
+    <Compile Include="ResponseGenerator.cs" />
     <Compile Include="FootballChatbot.cs" />
     <Compile Include="ChatbotForm.cs">
       <SubType>Form</SubType>
@@ -55,6 +57,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BotResponse.cs" />
     <EmbeddedResource Include="ChatbotForm.resx">
       <DependentUpon>ChatbotForm.cs</DependentUpon>
     </EmbeddedResource>
