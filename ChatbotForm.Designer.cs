@@ -1,6 +1,6 @@
 ﻿namespace FootballBot
 {
-    partial class Form1
+    partial class ChatbotForm
     {
         /// <summary>
         /// Required designer variable.
@@ -58,7 +58,8 @@
             this.richTextBoxChat.Name = "richTextBoxChat";
             this.richTextBoxChat.Size = new System.Drawing.Size(778, 268);
             this.richTextBoxChat.TabIndex = 2;
-            this.richTextBoxChat.Text = "Welcome to the Football Chatbot!";
+            this.richTextBoxChat.Text = "Welcome to the Football Chatbot!\nBot: Ask me anything about football, type \'help\'" +
+    " for assistance, or \'exit\' to quit.";
             // 
             // buttonSend
             // 
@@ -68,8 +69,9 @@
             this.buttonSend.TabIndex = 3;
             this.buttonSend.Text = "Send";
             this.buttonSend.UseVisualStyleBackColor = true;
+            this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
             // 
-            // Form1
+            // ChatbotForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -78,7 +80,7 @@
             this.Controls.Add(this.richTextBoxChat);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.textBoxChat);
-            this.Name = "Form1";
+            this.Name = "ChatbotForm";
             this.Text = "Football Bot";
             this.ResumeLayout(false);
             this.PerformLayout();
